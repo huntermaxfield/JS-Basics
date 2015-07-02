@@ -36,6 +36,12 @@ function getName() {
 //then alerts "Welcome, " plus whatever the users name is.
 
   //Code Here
+function welcome() {
+	getName();
+	alert("Welcome, " + name);
+}
+
+welcome();
 
 
 //Next problem
@@ -46,7 +52,7 @@ function getName() {
 //What is the difference between arguments and parameters?
 
   //Answer Here
-
+// arguments are the actual values, parameters are variables for the arguments
 
 //Next problem
 
@@ -56,7 +62,12 @@ function getName() {
 
 
   //Answer Here
-
+// Falsey values: Null, Undefined, '', 0, false
+if(foo) {
+	console.log("Truthy all day");
+} else {
+	console.log("Dang, i'm falsy");
+}
 
 
 //Next Problem
@@ -67,12 +78,19 @@ function getName() {
 
   //Code Here
 
+function myName() {
+	return "Hunter";
+}
+
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
 
+ var newMyName = myName();
+
 //Now alert the result of invoking newMyName
 
+alert(newMyName);
 
 
 //Next problem
